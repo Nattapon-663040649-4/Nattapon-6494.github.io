@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* ทำให้ container กว้างเต็มจอ แต่ยังมี padding */
+.container {
+  max-width: 100%;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+/* ปรับขนาดหัวข้อให้ใหญ่ */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* ข้อความทั่วไป */
+p, li {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #444;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* ทำให้ลิสต์ดูสบายตา */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Responsive เมื่อจอเล็กลง */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p, li {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+}
